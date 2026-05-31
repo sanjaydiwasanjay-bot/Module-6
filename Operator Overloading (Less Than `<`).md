@@ -1,31 +1,42 @@
-# 🐍 Python OOP: Operator Overloading (Less Than `<`)
+# 🐍 Python OOP: Encapsulation with Private Members
 
 ## 🎯 AIM
 
-To write a Python program that demonstrates **operator overloading** by overloading the **less than (`<`)** operator using a custom class.
+To implement **Encapsulation** in Python by defining a class `Rectangle` with **private member variables** `__length` and `__breadth`.
 
 ---
 
 ## 🧠 ALGORITHM
 
-1. **Create Class `A`**:
-   - Define the `__init__()` method to initialize the object with a value `a`.
+1. **Define the Class**:
+   - Create a class `Rectangle` with two private attributes: `__length` and `__breadth`.
 
-2. **Overload the `<` Operator**:
-   - Define the `__lt__()` method with logic:
-     - If `self.a < o.a`, return `"ob1 is less than ob2"`
-     - Else, return `"ob2 is less than ob1"`
+2. **Initialize Variables**:
+   - Use the `__init__()` constructor to set initial values for `__length` and `__breadth`.
 
-3. **Create Objects**:
-   - Instantiate two objects `ob1` and `ob2` with values.
+3. **Print Values**:
+   - Display the private variables from within the class to demonstrate access.
 
-4. **Use `<` Operator**:
-   - Use `print(ob1 < ob2)` to trigger the overloaded behavior.
+4. **Instantiate the Object**:
+   - Create an object of the `Rectangle` class to trigger the constructor.
 
 ---
 
 ## 💻 Program
-
+```
+  class Rectangle:
+    __length = 0 
+    __breadth = 0
+    def __init__(self):
+      self.__length = 5
+      self.__breadth = 3
+      print(self.__length)
+      print(self.__breadth)
+   
+  obj = Rectangle()
+```
 ## Output
+<img width="384" height="185" alt="530219220-197ab6a2-bacb-4bc4-ac15-564e802f2413" src="https://github.com/user-attachments/assets/cbe9547c-f632-47fe-bd79-09f40d4ad584" />
 
 ## Result
+Thus the program to implement Encapsulation in Python by defining a class Rectangle with private member variables __length and __breadth is executed successfully.

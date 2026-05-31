@@ -1,32 +1,42 @@
-# # 🐍 Python OOP: Polymorphism with Classes
+# 🐍 Python OOP: Encapsulation with Private Members
 
 ## 🎯 AIM
 
-To create two specific classes — `Beans` and `Mango`. Then, create a **generic function** that can accept any object and determine its **type** (Fruit or Vegetable) and **color**, using polymorphism.
+To implement **Encapsulation** in Python by defining a class `Rectangle` with **private member variables** `__length` and `__breadth`.
 
 ---
 
 ## 🧠 ALGORITHM
 
-1. **Create Class `Beans`**:
-   - Define `type()` method that prints `"Vegetable"`.
-   - Define `color()` method that prints `"Green"`.
+1. **Define the Class**:
+   - Create a class `Rectangle` with two private attributes: `__length` and `__breadth`.
 
-2. **Create Class `Mango`**:
-   - Define `type()` method that prints `"Fruit"`.
-   - Define `color()` method that prints `"Yellow"`.
+2. **Initialize Variables**:
+   - Use the `__init__()` constructor to set initial values for `__length` and `__breadth`.
 
-3. **Define Generic Function `func(obj)`**:
-   - Call `obj.type()` and `obj.color()` — this works with both `Beans` and `Mango` objects, showcasing **polymorphism**.
+3. **Print Values**:
+   - Display the private variables from within the class to demonstrate access.
 
-4. **Create Objects**:
-   - Instantiate `Beans` and `Mango`.
-   - Pass them to `func()` and execute the program.
+4. **Instantiate the Object**:
+   - Create an object of the `Rectangle` class to trigger the constructor.
 
 ---
 
 ## 💻 Program
-
+```
+  class Rectangle:
+    __length = 0 
+    __breadth = 0
+    def __init__(self):
+      self.__length = 5
+      self.__breadth = 3
+      print(self.__length)
+      print(self.__breadth)
+   
+  obj = Rectangle()
+```
 ## Output
+<img width="384" height="185" alt="530219220-197ab6a2-bacb-4bc4-ac15-564e802f2413" src="https://github.com/user-attachments/assets/cbe9547c-f632-47fe-bd79-09f40d4ad584" />
 
 ## Result
+Thus the program to implement Encapsulation in Python by defining a class Rectangle with private member variables __length and __breadth is executed successfully.
